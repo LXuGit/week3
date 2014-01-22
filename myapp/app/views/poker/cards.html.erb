@@ -1,0 +1,9 @@
+<h1>Poker</h1>
+
+<% if @cards.length == 5 %>
+<h3>This is the standard poker hand.</h3>
+<% end %>
+
+<% @cards.each do |card| %>
+  <p><%= card.first %> of <%= card.last %></p>
+<% end %>
